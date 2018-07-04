@@ -27,6 +27,7 @@ class Sqlite3ppConan(ConanFile):
         cmake.build()
 
     def package(self):
+        self.copy("FindSQLite3PP.cmake", ".", ".")
         self.copy("*.h", dst="include", src="sqlite3pp/src")
         self.copy("*.lib", dst="lib", keep_path=False)
         self.copy("*.a", dst="lib", keep_path=False)
