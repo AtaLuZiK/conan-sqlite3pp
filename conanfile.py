@@ -1,7 +1,6 @@
-import os
 import shutil
 
-from conans import CMake, ConanFile, tools
+from conans import CMake, ConanFile
 
 
 class Sqlite3ppConan(ConanFile):
