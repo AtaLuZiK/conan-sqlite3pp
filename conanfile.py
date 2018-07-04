@@ -13,6 +13,7 @@ class Sqlite3ppConan(ConanFile):
     settings = "os", "compiler", "build_type", "arch"
     requires = "sqlite3/3.21.0@bincrafters/stable"
     exports = ["CMakeLists.txt"]
+    exports_sources = ["FindSQLite3PP.cmake"]
     generators = "cmake"
 
     def source(self):
